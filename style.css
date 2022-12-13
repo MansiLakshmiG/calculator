@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0px;
+}
+
+h4{
+    color: #817825;
+    position: absolute;
+    left: 645px;
+    top: 28px;
+}
+
+.container{
+    height: 600px;
+    width: 350px;
+    background-color: #292626;
+    margin-left: 520px;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(142, 142, 165, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#screen{
+    height: 120px;
+    text-align: center;
+    width: 350px;
+    font-size: xx-large;
+    font-weight:bolder;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+      color: rgb(185, 34, 127);
+    cursor:alias
+}
+
+.symbol{
+    position:absolute;
+    left: 545px;
+    margin-top: 50px;
+}
+
+input{
+    height: 60px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: #292626;
+    border: none;
+    border: #292626 ridge;
+    margin-top: 5px;
+    box-shadow: rgba(93, 97, 99, 0.12) 0px 2px 4px 0px, rgba(90, 96, 99, 0.32) 0px 2px 16px 0px;
+    font-size: xx-large;
+    font-weight:bolder;
+    cursor: pointer;
+}
+input:active{
+    height: 59px;
+    width: 69px;
+    margin-left: 1px;
+}
+
+.btn-equal{
+    height: 120px;
+    border-radius: 30px;
+    position: absolute;
+    top:263px;
+    left: 230px;
+    background-color: rgb(165, 41, 64);
+    color:wheat; 
+}
+.btn-equal:active{
+    height: 119px;
+    width: 68px;
+}
+
+.btn-operator{
+      background-color: rgb(87, 48, 124);
+}
+
+.btn-reset{
+    color: wheat;
+    background-color: rgb(112, 45, 109);
+}
+
+.btn-other{
+    background-color: rgb(29, 43, 65);
+}
+
+.btn-top{
+    color: rgb(64, 216, 64);
+    background-color: #292626;
+    padding: 2px;
+    border: #292626 ridge;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-top:active{
+    padding: 1px;
+    margin: 1px;
+}
+
+.container-btn-top{
+    position: absolute;
+    top: 180px;
+    left: 583px;
+}
+
+/*added class after togglebtn clicked*/
+.cont{
+   background-color: white;
+}
+.scrn{
+    background-color: white;
+}

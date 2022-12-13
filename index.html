@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h4>Casio fx-300MS</h4>
+
+    <div class="container">
+        <form action="">
+            <input id="screen" class="inp-screen"> <br>
+            <div class="symbol">
+
+                <input class="btn-reset" type="button" value="C" onclick="resetScreenValue()">
+                <input class="btn-other" type="button" value="(" onclick="screen.value+='('">
+                <input class="btn-other" type="button" value=")" onclick="screen.value+=')'">
+                <input class="btn-other" type="button" value="x" onclick="screen.value+='*'">
+                <br>
+
+                <input class="btn-other" type="button" value="&" onclick="screen.value+=''">
+                <input class="btn-other" type="button" value="%" onclick="screen.value+='%'">
+                <input class="btn-other" type="button" value="$" onclick="screen.value+=''">
+                <input class="btn-operator" type="button" value="/" onclick="screen.value+='/'">
+                <br>
+
+                <input type="button" value="7" onclick="screen.value+='7'">
+                <input type="button" value="8" onclick="screen.value+='8'">
+                <input type="button" value="9" onclick="screen.value+='9'">
+                <input class="btn-operator" type="button" value="-" onclick="screen.value+='-'">
+                <br>
+
+                <input type="button" value="4" onclick="screen.value+='4'">
+                <input type="button" value="5" onclick="screen.value+='5'">
+                <input type="button" value="6" onclick="screen.value+='6'">
+                <input class="btn-operator" type="button" value="+" onclick="screen.value+='+'">
+                <br>
+
+                <input type="button" value="1" onclick="screen.value+='1'">
+                <input type="button" value="2" onclick="screen.value+='2'">
+                <input type="button" value="3" onclick="screen.value+='3'">
+                <br>
+
+                <input type="button" value="." onclick="screen.value+='.'">
+                <input type="button" value="0" onclick="screen.value+='0'">
+                <input type="button" value="^" onclick="">
+                <br>
+
+                <input class="btn-equal" type="button" value="=" onclick="screen.value=eval(screen.value)">
+
+            </div>
+        </form>
+    </div>
+
+    
+    <div class="container-btn-top">
+        <button class="btn-top" id="name" onclick="showName()" >Shift</button>
+        <button class="btn-top" id="mode" type="button" >Mode</button>
+        <button class="btn-top" id="delete" onclick="backspace()" >Delete</button>
+        <button class="btn-top" id="formula" onclick="showFormula()" >Formula</button>
+    </div>
+
+
+
+
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
